@@ -54,7 +54,7 @@ header > p{
     font-family: var(--fonte-padrao);
     max-width: 500px;
     margin: auto;
-    padding: 0px 10px 0 10px;
+    padding: 0px 15px 0 10px;
 }
 
 header > h1{
@@ -66,9 +66,6 @@ header > h1{
 
 }
 
-header > a {
-    text-align: left;
-}
 
 main{
     background-color: white;
