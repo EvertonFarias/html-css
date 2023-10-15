@@ -93,6 +93,7 @@ main h2 {
 
 main p{
     margin: 15px 0px;
+    padding-bottom: 5px;
     text-align: justify;
     text-indent: 30px;
     line-height: 2em;
