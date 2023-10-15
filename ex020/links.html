@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+         #id
+         .class
+         :pseudo class
+         ::pseudo element
+         > children
+        
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: grid; place-items: center;
+            
+        
+        }
+        h1 {
+            color: blue;
+            font-family: cursive;
+            text-align: center;
+        }
+        a {
+            color: rgb(237, 132, 11);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: rgb(89, 221, 231);
+        }
+        a:hover {
+            text-decoration: underline;
+            font-family: cursive;
+            color: rgb(108, 20, 98);
+            
+        }
+        a::before {
+            content: '->';
+            display: inline-block;
+        }
+        a::after {
+            content: "<-";
+            display: inline-block;
+            
+        }
+        a:active{
+            color: azure;
+        }
+        div {
+            
+            height: 150px;
+            width: 350px;
+            border: 1px solid black;
+            background-image: linear-gradient(to right ,#5781ff,  #3022a0 );
+            display: grid; place-items: center;
+            
+
+        }
+
+        
+        ul {
+            margin: 0;
+            padding: 36px;
+            text-align: center;
+        }
+        li {
+            display: inline-block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Personalizando links</h1>
+    <div class="conteiner">
+        <ul>
+            <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external">
+                <li>Repositório Github</li>
+            </a>
+            <br>
+            <a href="https://www.youtube.com/@CursoemVideo" target="_blank" rel="external">
+                <li>Canal do Youtube</li>
+            </a>
+            <br>
+            <a href="https://www.cursoemvideo.com" target="_blank" rel="external">
+                <li>Site do CursoemVideo</li>
+            </a>
+        </ul>
+    </div>
+    
+</body>
+</html>

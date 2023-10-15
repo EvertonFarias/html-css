@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cópia</title>
+    <style>
+        body {
+            background-color: rgb(202, 244, 204);
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centraliza horizontalmente */
+            text-align: center;
+        }
+
+        header {
+            width: 100%;
+            background-color: aliceblue;
+            height: 110px;
+            margin-top: 0;
+            padding: 0.1px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        }
+
+        h1 {
+            color: rgb(10, 106, 190);
+            font-size: 40px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        div#links {
+            background-color: rgb(177, 104, 245);
+            font-size: 20px;
+            width: 250px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        div#cabeca {
+            background-color: aliceblue;
+            height: 100px;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Centraliza verticalmente */
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        li {
+            margin-top: 6px;
+            display: flex;
+            justify-content: center; /* Alinha o conteúdo à esquerda */
+        }
+
+        a {
+            color: yellow;
+            text-decoration: none;
+        }
+
+        a:active{
+            color:rgb(145, 8, 24) !important;
+        }
+        a:hover{
+            color: rgba(255, 5, 34, 0.597);
+        }
+        a::after{
+            content: "⇽";
+        }
+        a::before{
+            content: "⇾";
+        }
+        abbr {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="cabeca">
+            <h1>Personalizando links</h1>
+        </div>
+    </header>
+
+    <div id="links">
+        <ul type="circle">
+            <li>
+                <a href="https://www.youtube.com" target="_blank">
+                    <abbr title="Clique aqui">Canal do Youtube</abbr>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com" target="_blank">
+                    <abbr title="Clique aqui">Repositório do Github</abbr>
+                </a>
+            </li>
+            <li>
+                <a href="https://facebook.com.br" target="_blank">
+                    <abbr title="Clique aqui">Facebook</abbr>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
