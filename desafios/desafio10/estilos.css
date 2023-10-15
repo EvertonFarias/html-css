@@ -40,7 +40,7 @@ body{
 }
 header {
     font-family: var(--fonte-destaque);
-    min-height: 150px;
+    min-height: 155px;
     background-image: linear-gradient(to top, var(--cor5), var(--cor2));
     color: white;
     justify-content: center;
