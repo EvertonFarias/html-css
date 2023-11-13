@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            /* position: relative; */
+            height: 96vh;
+            padding: 10px;
+            background-color: brown;
+            background-repeat: no-repeat;
+        }
+
+        #container {
+            display: flex;
+            /*Possui diversas funções (procurem pela documentação), uma delas é habilitar o manejamento do conteúdo*/
+            justify-content: center;
+            /*Alinhamento horizontal, ou seja, dispensa o "margin: auto"*/
+            align-items: center;
+            /*Alinhamento vertical*/
+        }
+
+        /* 
+        #content {
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            background-color: burlywood;
+
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            transform: translate(-50%, -50%);
+
+        } */
+
+
+
+
+        /* outra maneira de centralizar verticalmente e horizontalmente */
+        #content {
+
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            background-color: burlywood;
+
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+
+
+        }
+
+
+
+
+        #content:hover {
+            background-color: aqua;
+            top: 50%;
+            left: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="container">
+        <article id="content"></article>
+    </section>
+</body>
+
+</html>
